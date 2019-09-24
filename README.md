@@ -1,5 +1,3 @@
-# lambdainfra
-
 ** INFRA-SPOT**
 
 This terraform code will create everything necessary for you to get go with spot fleet request.
@@ -16,4 +14,3 @@ However, to use this code efficiently you have to configure few things:
 IMP: Verify that lambda function created has correct Autoscaling group name in first function, and spot instance tags,on-demand tags and spot fleet request id is correct in second_function.
 
 Comment on blog for any queries.
-
