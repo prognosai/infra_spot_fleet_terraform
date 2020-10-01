@@ -1,15 +1,15 @@
 ###### creating iam role
 module "iamrole" {
-  source = "../modules/iamrole"
-  role_name = "${var.role_name}"
+  source    = "../modules/iamrole"
+  role_name = var.role_name
 }
 
 ##### creating iam policy
 module "iampolicy" {
-  source = "../modules/iampolicy"
-  policy_name = "${var.policy_name}"
-  role_name = "${module.iamrole.role_name}"
-  
+  source      = "../modules/iampolicy"
+  policy_name = var.policy_name
+  role_name   = module.iamrole.role_name
+
 }
 
 ###### creating iam role for spot tagging

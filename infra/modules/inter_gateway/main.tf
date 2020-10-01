@@ -1,7 +1,7 @@
 resource "aws_internet_gateway" "inter_gateway" {
-    vpc_id = "${var.vpc_id}"
+  vpc_id = var.vpc_id
 
-    tags = {
-        Name = "${var.ig_tag_Name}"
-    }
+  tags = {
+    Name = "${var.ig_tag_Name}"
+  }
 }

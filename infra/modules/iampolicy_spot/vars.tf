@@ -1,11 +1,11 @@
 variable "spot_policy_name" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 
 variable "spot_role_name" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 
 

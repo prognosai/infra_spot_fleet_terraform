@@ -1,12 +1,12 @@
 variable "ami" {
-    description = "ami of instance"
+  description = "ami of instance"
 }
 
 variable "sg" {
-    description = "security group of instance"
+  description = "security group of instance"
 }
 
 variable "keypair" {
-    description = "keypair of instance"
+  description = "keypair of instance"
 }
 

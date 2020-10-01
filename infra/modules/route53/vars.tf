@@ -1,20 +1,20 @@
 variable "zone_id" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 variable "name_domain" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 variable "alias_zone_id" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 variable "alias_zone_name" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 variable "alb_dns" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }

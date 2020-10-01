@@ -1,22 +1,22 @@
 variable "file_name" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 variable "function_name" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 variable "role" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 variable "handler" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 variable "runtime" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 
 

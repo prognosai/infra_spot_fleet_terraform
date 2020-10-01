@@ -1,11 +1,11 @@
 variable "policy_name" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 
 variable "role_name" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 
 

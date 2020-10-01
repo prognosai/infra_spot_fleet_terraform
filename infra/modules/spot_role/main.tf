@@ -11,14 +11,14 @@ data "aws_iam_policy_document" "instance-assume-role-policy-for-spotfleet" {
 }
 
 resource "aws_iam_role" "spot-fleet-tagging-role" {
-  assume_role_policy = "${data.aws_iam_policy_document.instance-assume-role-policy-for-spotfleet.json}"
-  name = "SpotFleetTaggingRole-${element(split("-",uuid()), 0)}"
+  assume_role_policy = data.aws_iam_policy_document.instance-assume-role-policy-for-spotfleet.json
+  name               = "SpotFleetTaggingRole-${element(split("-", uuid()), 0)}"
   lifecycle {
-    ignore_changes = ["name"]
+    ignore_changes = [tags["Name"]]
   }
 }
 
 resource "aws_iam_role_policy_attachment" "spot_request_policy" {
-  role = "${aws_iam_role.spot-fleet-tagging-role.name}"
+  role       = aws_iam_role.spot-fleet-tagging-role.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetTaggingRole"
 }

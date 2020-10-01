@@ -1,12 +1,12 @@
 variable "name_cwrule" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 variable "state_running_function_arn" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }
 variable "state_running_function_name" {
-    description = ""
-    default = ""
+  description = ""
+  default     = ""
 }

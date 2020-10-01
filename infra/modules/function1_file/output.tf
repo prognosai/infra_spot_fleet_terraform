@@ -1,3 +1,3 @@
 output "filename" {
-    value = "${local_file.create_file.filename}"
+  value = local_file.create_file.filename
 }

@@ -1,6 +1,6 @@
 resource "aws_iam_role_policy" "policy_spot" {
-  name = "${var.spot_policy_name}"
-  role = "${var.spot_role_name}"
+  name   = var.spot_policy_name
+  role   = var.spot_role_name
   policy = <<EOF
 {
     "Version": "2012-10-17",
