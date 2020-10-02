@@ -1,7 +1,7 @@
 # launch config of autoscaling 
 module "launch_config" {
     source = "../modules/launch_conf"
-    ami = "${var.ami_id}"
+    ami = "${data.aws_ami.ubuntu.id}"
     sg = "${module.security_group.sg_id}"
     keypair = "${var.key_name}"
 }

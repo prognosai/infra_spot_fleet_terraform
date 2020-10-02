@@ -1,5 +1,6 @@
 provider "aws" {
     region = "us-east-1"
+    profile = "personal"
 }
 
 # Creating VPC
@@ -78,3 +79,20 @@ module "pub4_association_to_routetable" {
   subnet_id             = "${module.pubb_subnet4.id}"
   routetable_id         = "${module.pub_routetable.routetable_id}"
 }
+
+data "aws_ami" "ubuntu" {
+  most_recent = true
+
+  filter {
+    name   = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-*"]
+  }
+
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
+
+  owners = ["099720109477"] # Canonical
+}
+

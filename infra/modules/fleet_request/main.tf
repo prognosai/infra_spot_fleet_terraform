@@ -8,7 +8,7 @@ resource "aws_spot_fleet_request" "cheap_compute"{
 
     target_capacity = "${var.target_capacity}"                                                             ### number of spot instances we need
 
-    valid_until = "2020-08-27T02:22:47Z"
+    valid_until = "${timeadd(timestamp(), "24h")}"
 
     instance_interruption_behaviour = "terminate"
 

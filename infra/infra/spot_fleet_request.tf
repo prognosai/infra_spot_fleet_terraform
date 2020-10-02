@@ -9,7 +9,7 @@ module "spot_fleet_request" {
     
     ####### first LS
     vpc_sg_id1 = "${module.security_group.sg_id}"
-    ami_id1 = "${var.ami_id}"
+    ami_id1 = "${data.aws_ami.ubuntu.id}"
     key_name1 = "${module.key_pair.key_id}"
     instance_type1 = "${var.instance_type1}"
     spot_price1 = "${var.spot_price1}"
@@ -19,7 +19,7 @@ module "spot_fleet_request" {
 
     ####### second LS
     vpc_sg_id2 = "${module.security_group.sg_id}"
-    ami_id2 = "${var.ami_id}"
+    ami_id2 = "${data.aws_ami.ubuntu.id}"
     key_name2 = "${module.key_pair.key_id}"
     instance_type2 = "${var.instance_type2}"
     spot_price2 = "${var.spot_price2}"
@@ -29,7 +29,7 @@ module "spot_fleet_request" {
 
     ####### Third LS
     vpc_sg_id3 = "${module.security_group.sg_id}"
-    ami_id3 = "${var.ami_id}"
+    ami_id3 = "${data.aws_ami.ubuntu.id}"
     key_name3 = "${module.key_pair.key_id}"
     instance_type3 = "${var.instance_type3}"
     spot_price3 = "${var.spot_price3}"
@@ -39,7 +39,7 @@ module "spot_fleet_request" {
 
     ####### Fourth LS
     vpc_sg_id4 = "${module.security_group.sg_id}"
-    ami_id4 = "${var.ami_id}"
+    ami_id4 = "${data.aws_ami.ubuntu.id}"
     key_name4 = "${module.key_pair.key_id}"
     instance_type4 = "${var.instance_type4}"
     spot_price4 = "${var.spot_price4}"
@@ -49,7 +49,7 @@ module "spot_fleet_request" {
 
     ####### Fifth LS
     vpc_sg_id5 = "${module.security_group.sg_id}"
-    ami_id5 = "${var.ami_id}"
+    ami_id5 = "${data.aws_ami.ubuntu.id}"
     key_name5 = "${module.key_pair.key_id}"
     instance_type5 = "${var.instance_type5}"
     spot_price5 = "${var.spot_price5}"

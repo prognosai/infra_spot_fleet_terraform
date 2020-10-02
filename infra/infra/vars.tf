@@ -232,10 +232,10 @@ variable "target_capacity" {
     default = 2
 }
 ######## launch specification common
-variable "ami_id" {
-    description = "Specify your ami id"
-    default = "ami-05724f166d5150afa"
-}
+//variable "ami_id" {
+//    description = "Specify your ami id"
+//    default = "ami-0478565e56d954357"
+//}
 variable "instance_tag_name_value" {
     description = "value for Name tag"
     default = "fleet"
